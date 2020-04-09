@@ -30,9 +30,9 @@ class DataTable extends Component {
         ]; // initialising the Coloumn Headers
         const RowDetail = ({ row }) => (
             <div>
-                Details for {' '} {row.name}{' '} of {' '} {row.nametype} has mass of {''} {row.mass}
-                and rec latitude and longitude is {row.reclat}, {row.reclong} with Geo Location {''}
-                {row.geolocation.latitude}, {row.geolocation.longitude}.
+                Details for {' '} <b>{row.name}</b>{' '} of {' '} {row.nametype} Name Type, with mass of {''} {row.mass}
+                and rec latitude and longitude is {' '} {row.reclat}, {row.reclong} pointing Geo Location with Coordinates {''}
+                {row.geolocation.latitude}, {row.geolocation.longitude} .
             </div> // display more details on click of a row.
         );
         return (
